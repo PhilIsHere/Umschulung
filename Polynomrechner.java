@@ -21,7 +21,6 @@ public class Polynomrechner {
 		double[] myArray = new double[gradangabe];
 		pop_array(gradangabe, myArray);
 		calc_array(gradangabe, myArray);
-
 	}
 
 	// Calculates the Array accordingly and sorts it in descending order
@@ -54,9 +53,7 @@ public class Polynomrechner {
 			else if (i >= 1 && i < myArray.length) {
 				if (myArray[(myArray.length - 1 - i)] < 0) { // When Negative Number don't print "+"
 					System.out.print((int) myArray[(myArray.length - 1 - i)] + "x^" + (myArray.length - i));
-				} else if ((int) myArray[(myArray.length - 1 - i)] >= 0) { // if positive number print "+" but only if
-																			// next
-																			// number is positive as well
+				} else if ((int) myArray[(myArray.length - 1 - i)] >= 0) { // if positive number print "+" but only if next number is positive as well
 					System.out.print("+" + (int) myArray[(myArray.length - 1 - i)] + "x^" + (myArray.length - i));
 				}
 			}
